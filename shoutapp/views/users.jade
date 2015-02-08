@@ -1,0 +1,9 @@
+extends layout
+
+block content
+	h1 Users
+	a(href="/adduser") Add User
+	ul
+		each user, i in users
+			li 
+				a(href="/user/#{user.username}") #{user.username}
